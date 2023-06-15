@@ -1,0 +1,19 @@
+<div class="jumbotron text-center">
+  <div class="container">
+    <h1>Create users</h1>
+    <ul>
+      <li>
+        <%= link_to "make 10 new objects in DB", make_objects_path %>
+      </li>
+      <li>
+        <%= link_to "View users", expensive_path %>
+      </li>
+    </ul>
+  </div>
+  <ul>
+  <ul>
+  <% @users.each do |u| %>
+    <li><%= u.inspect %></li>
+  <% end %>
+  </ul>
+</div>
